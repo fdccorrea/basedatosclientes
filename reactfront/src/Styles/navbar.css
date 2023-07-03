@@ -1,0 +1,42 @@
+.img{
+
+}
+
+/* Estilos para el contenedor de las rutas */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;  
+  padding: 15px;
+  background-color: burlywood;
+  border-radius: 10px;
+}
+
+/* Estilos para el encabezado de la página */
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/*  Estilos para la navegación */
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav a {
+  margin: 5px 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/*  Estilos para el contenido de cada ruta*/
+.route-content {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+

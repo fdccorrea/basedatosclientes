@@ -1,6 +1,7 @@
 import axios from 'axios'
 import {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import Login2 from '../Components/Login2'
 
 const URI = 'http://localhost:8000/blogs/'
 
@@ -46,11 +47,11 @@ const CompShowBlogs = () => {
                                     <td> { blog.cel } </td>
                                     <td>                                     
                                        <Link to={`/edit/${blog.id}`} className='btn btn-info'><i className="fas fa-edit"></i> Editar</Link>
-                                       <button onClick={ ()=> deleteBlog(blog.id)} className='btn btn-dander'> Delete </button>
+                                       <button onClick={ ()=> deleteBlog(blog.id)} className='btn btn-danger'> Delete </button>
                                     </td>
                                 </tr>
                             ))}
-                        </tbody>
+                        </tbody>                        
                     </table>
                 </div>
             </div>

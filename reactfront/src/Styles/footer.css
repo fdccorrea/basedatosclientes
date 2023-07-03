@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2? family=Open+Sans&display=swap');
+.conteinerFooter{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    background-color: #0a141d;
+}
+.conteinerFooter .pie-pagina{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+.conteinerFooter .pie-pagina .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    
+}
+.conteinerFooter .pie-pagina .box figure img{
+  width: 225px;  
+
+}
+.conteinerFooter .pie-pagina .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.conteinerFooter .pie-pagina .box p{
+  color: #b6b5cc;
+  margin-bottom: 10px;
+
+}
+.conteinerFooter .pie-pagina .redSocial a{
+display: inline-block;
+text-decoration: none;
+width: 45px;
+height: 45px;
+line-height: 45px;
+color: #fff;
+margin-right: 10px;
+background-color: #0d2033;
+text-align:center;
+transition: all 300ms ease;
+}
+.conteinerFooter .pie-pagina .redSocial a:hover{
+  color: aqua;
+}
+.conteinerFooter .grupoDos{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.conteinerFooter .grupoDos small{
+  font-size: 17px;
+}
+@media screen and (max-width:800px){
+  .conteinerFooter .pie-pagina{
+    width: 80%;
+    
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 35px;
+    padding: 35px 0px;
+    align-items: center;
+
+}
+
+}
+@media screen and (max-width:400px){
+  .conteinerFooter .pie-pagina{
+    width: 75%;
+    
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+    padding: 25px 0px;
+    
+
+}
+
+
+}

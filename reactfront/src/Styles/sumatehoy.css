@@ -1,0 +1,37 @@
+.contenedorFondo {
+  background-image: url(../Images/fondoTurnos.jpg);
+	width: 95%;
+	height: 500px;
+	border-radius: 10px;
+	margin-left: 25px;
+	margin-top: 10px;
+	margin: 10px 40px;
+	padding-left: 10px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	border-radius: 20px;
+  box-shadow: 5px 8px 12px black;
+}
+
+.promo {    /*background-image: url(../Images/promo1.jpg);    */
+    width: 350px;
+    height: 450px;	
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    margin-top: 20px;	
+    margin-left: 20px; 	/*padding: 20px;*/
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;	   
+    background-repeat: no-repeat; 
+  }
+
+.promo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+

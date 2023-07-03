@@ -1,0 +1,97 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.contentHeder{
+    background-color: rgba(237, 222, 222, 0.436); /* Cambia el valor de la transparencia (0.5 en este ejemplo) según tus preferencias */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+    color: #fff;
+    z-index: 9999;  
+}
+
+.Nav{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;   
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    z-index: 9999;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;   /*estilo de letra*/
+}
+nav ul li a:hover{
+    color: rgb(108, 255, 54);
+}
+Nav>a{
+    padding-bottom: 20px;
+}
+/* Estilos para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .contentHeder {
+      padding-top: 10px;
+    }
+  
+    .Nav {
+      flex-direction: column;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    nav ul li {
+      display: block;
+      padding: 5px;
+    }
+  }
+  
+  /* Estilos para pantallas con un ancho máximo de 480px */
+  @media (max-width: 480px) {
+    .contentHeder {
+      padding-top: 5px;
+    }
+  
+    .Nav {
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+  
+    nav ul li {
+      padding: 3px;
+    }
+  }
+  .menu-toggle {
+    display: none; /* Oculta el botón de menú por defecto */
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Muestra el botón de menú en pantallas más pequeñas */
+      cursor: pointer;
+    }
+  
+    .nav ul {
+      display: none; /* Oculta el menú de navegación en pantallas más pequeñas */
+    }
+  
+    .nav ul.show {
+      display: flex; /* Muestra el menú de navegación cuando se activa el menú desplegable */
+      flex-direction: column;
+    }
+  }
